@@ -1,0 +1,154 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head>
+	<meta charset="utf-8">
+	<title>Contact | Sara Coutinho | Senior digital product &amp; interaction designer, UX/UI designer, and front-end developer</title>
+	<meta name="description" content="Get in touch and I'd be more than happy to meet with you and your team to discuss your requirements and project(s) and find out how I can best assist you">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&amp;family=Mulish:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="contact-page">
+<div id="main" class="main text-page">
+	
+<header id="main-header">
+	<div class="content">
+		<a href="\" class="logo-inline">Sara Coutinho</a>
+		<nav class="nav-main" id="main-menu">
+			<ul>
+				<li class="about">
+					<a href="about">
+						<span class="title">About me</span>
+						<span class="caption">A brief intro</span>
+					</a>
+				</li>
+				<li class="skills">
+					<a href="what-i-do">
+						<span class="title">What I do</span>
+						<span class="caption">Process &amp; Skills</span>
+					</a>
+				</li>
+				<li class="portfolio ">
+					<a href="portfolio/">
+						<span class="title">Work</span>
+						<span class="caption">Portfolio</span>
+					</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="portfolio/kiwiviz">KiwiViz</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/cacophony">Cacophony</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/ws">WhereScape</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/trimble">Trimble</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/tvn">TVN</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/bird-counter">Bird Counter</a>
+                        </li>
+                    </ul>
+				</li>
+				<li class="scrapbook">
+					<a href="http://scrapbook.saracoutinho.co.nz" target="_blank" rel="nofollow">
+						<span class="title">Scrapbook</span>
+						<span class="caption">The inspiration stream</span>
+					</a>
+				</li>
+				<li class="contact">
+					<a href="contact" class="selected">
+						<span class="title">Contact</span>
+						<span class="caption">Say hi</span>
+					</a>
+				</li>
+			</ul>
+			<button class="trigger" id="menu-hide">Close</button>
+		</nav>
+		<button class="trigger" id="menu-show">Menu</button>
+	</div>
+</header>	<div class="content">
+
+		<h2>Get in touch</h2>
+		<div class="text">
+            <p>I'd be more than happy to meet with you and your team to discuss your requirements and project(s) and find out how I can best assist you.</p>
+            <p>Drop me a line at sara @ this domain (saracoutinho.co.nz)<br> or alternatively get in touch via <a href="https://www.linkedin.com/in/saracoutinho" target="_blank" rel="nofollow">LinkedIn</a>.</p>
+			<p class="email">sara[at]saracoutinho[dot]co[dot]nz</p>
+		</div>
+
+	</div>
+	<footer id="main-footer">
+		<span class="enviro">This website is made from 100% recycled pixels</span>
+	</footer>
+</div>
+<script src="scripts/analytics.js"></script>
+<script type="text/javascript">
+    window.addEventListener("load", function () {
+        let mainMenu = document.getElementById("main-menu") || "";
+        let menuTrigger = document.getElementById("menu-show") || "";
+        let menuClose = document.getElementById("menu-hide") || "";
+
+        function toggleMenuClass() {
+            if (mainMenu.classList.contains("selected")) {
+                mainMenu.classList.remove("selected");
+            } else {
+                mainMenu.classList.add("selected");
+            }
+        }
+
+        menuTrigger.onclick = toggleMenuClass;
+        menuClose.onclick = toggleMenuClass;
+
+
+        let mainHeader = document.getElementById("main-header");
+        let previousScrollPosition = window.pageYOffset;
+
+        if (window.pageYOffset >= 68) {
+            positionHeader();
+        }
+
+        function positionHeader() {
+            if (window.pageYOffset >= 68) {
+                let currentScrollPosition = window.pageYOffset;
+
+                if (!mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.add("show-on-scroll-up");
+                }
+
+                if (previousScrollPosition > currentScrollPosition) {
+
+                    if (mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.remove("hide");
+                    }
+
+                } else {
+                    if (!mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.add("hide");
+                    }
+
+                }
+                previousScrollPosition = currentScrollPosition;
+            } else {
+
+                if (mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.remove("show-on-scroll-up");
+                }
+                if (mainHeader.classList.contains("hide")) {
+                    mainHeader.classList.remove("hide");
+                }
+            }
+        }
+
+        window.onscroll = positionHeader;
+
+    });
+</script>
+
+
+
+</body></html>

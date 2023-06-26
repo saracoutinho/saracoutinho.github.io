@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="335.309" height="282.404" viewBox="0 0 335.309 282.404">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle cx="35.5" cy="35.5" r="35.5" fill="#76b4be" opacity="0.5"/>
+      <circle cx="89.5" cy="62.5" r="42" fill="#76b4be" opacity="0.5"/>
+      <circle cx="47.919" cy="77.941" r="26.419" fill="#76b4be" opacity="0.5"/>
+      <text transform="translate(292.871 164.505)" font-size="12" fill="#7e9092" font-family="MyriadPro-Regular, Myriad Pro">3.8 m</text>
+      <line x1="83.789" y1="213" x2="236.789" y2="60" fill="none" stroke="#7e9092" stroke-miterlimit="10" stroke-dasharray="2 4"/>
+      <text transform="translate(146.851 113.267)" font-size="12" fill="#7e9092" font-family="MyriadPro-Regular, Myriad Pro">4.2m</text>
+      <path d="M89.956,250.263l-9.1-28.061a.08.08,0,0,0-.149-.007L77.8,228.983a.086.086,0,0,0-.007.036l.936,16.931c-.159-.184-.317-.369-.491-.543L53.388,220.56a10,10,0,0,0-12.92-1.223,9.775,9.775,0,0,0-1.124,14.756l25.1,25.1a9.736,9.736,0,0,0,8.119,2.758l-.006.011L83.7,260.331A7.757,7.757,0,0,0,89.956,250.263Z" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <circle cx="59.289" cy="240.5" r="11.5" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <rect x="67.789" y="210" width="19" height="19" rx="2" transform="translate(-138.102 131.406) rotate(-48.358)" fill="#fbb03b"/>
+      <circle cx="245.5" cy="52.5" r="11.5" fill="#7e9092" stroke="#fff" stroke-miterlimit="10"/>
+      <line x1="292.891" y1="232.535" x2="248.388" y2="66.448" fill="none" stroke="#7e9092" stroke-miterlimit="10" stroke-dasharray="2 4"/>
+      <path d="M328.245,245.826l-28.852-6.149a.08.08,0,0,0-.081.126l4.424,5.913a.092.092,0,0,0,.028.024L318.9,253.4c-.239.045-.478.089-.716.153l-33.941,9.094a10,10,0,0,0-7.52,10.578,9.774,9.774,0,0,0,12.217,8.351l34.291-9.188a9.736,9.736,0,0,0,6.448-5.652l.006.011,4.157-10.466A7.758,7.758,0,0,0,328.245,245.826Z" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <circle cx="304.457" cy="267.503" r="11.5" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <rect x="285.77" y="231.914" width="19" height="19" rx="2" transform="translate(159.137 597.691) rotate(-108.358)" fill="#fbb03b"/>
+    </g>
+  </g>
+</svg>

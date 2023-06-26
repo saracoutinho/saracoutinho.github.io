@@ -1,2 +1,191 @@
-Hello World!
-about.html at root
+<!DOCTYPE html><html class="no-js" lang="en"><head>
+	<meta charset="utf-8">
+	<title>About | Sara Coutinho | Senior digital product &amp; interaction designer, UX/UI designer, and front-end developer</title>
+	<meta name="description" content="Curious creature by nature. I'm a life-long learner with an interest in birds, fungi and the natural world.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&amp;family=Mulish:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="about-page">
+<div id="main" class="main text-page">
+	
+<header id="main-header">
+	<div class="content">
+		<a href="\" class="logo-inline">Sara Coutinho</a>
+		<nav class="nav-main" id="main-menu">
+			<ul>
+				<li class="about">
+					<a href="about" class="selected">
+						<span class="title">About me</span>
+						<span class="caption">A brief intro</span>
+					</a>
+				</li>
+				<li class="skills">
+					<a href="what-i-do">
+						<span class="title">What I do</span>
+						<span class="caption">Process &amp; Skills</span>
+					</a>
+				</li>
+				<li class="portfolio ">
+					<a href="portfolio/">
+						<span class="title">Work</span>
+						<span class="caption">Portfolio</span>
+					</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="portfolio/kiwiviz">KiwiViz</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/cacophony">Cacophony</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/ws">WhereScape</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/trimble">Trimble</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/tvn">TVN</a>
+                        </li>
+                        <li>
+                            <a href="portfolio/bird-counter">Bird Counter</a>
+                        </li>
+                    </ul>
+				</li>
+				<li class="scrapbook">
+					<a href="http://scrapbook.saracoutinho.co.nz" target="_blank" rel="nofollow">
+						<span class="title">Scrapbook</span>
+						<span class="caption">The inspiration stream</span>
+					</a>
+				</li>
+				<li class="contact">
+					<a href="contact">
+						<span class="title">Contact</span>
+						<span class="caption">Say hi</span>
+					</a>
+				</li>
+			</ul>
+			<button class="trigger" id="menu-hide">Close</button>
+		</nav>
+		<button class="trigger" id="menu-show">Menu</button>
+	</div>
+</header>	<div class="content">
+
+        <h2>I'm Sara, a <strong>curious person</strong> by nature.<br> I'm a <strong>life-long learner</strong> with an interest in <strong>birds</strong> and <strong>fungi</strong>.<br> Currently based in <strong>Ltautahi&nbsp;Christchurch</strong>.</h2>
+
+        <div class="text">
+            <p>I have a background in <strong>UX/UI design</strong> and <strong>front-end development</strong>, but my curiosity about the natural world drove me to complete a diploma in <strong>Applied Science</strong> at Lincoln university. There, I delved into the weird and wonderful world of natural sciences and fell down the rabbit hole of <strong>bird song</strong> and <strong>bioacoustics*</strong>.</p>
+
+            <p>I'm a tinkerer who enjoys coming up with solutions for problems I find around me and doing things just for fun. I also seem to entangle myself in some random side projects, such as being the sound gal for the local theatre group or spending a summer recording the sounds of native birds.</p>
+
+            <p>If you'd like to know more, check out <a href="what-i-do">what I do professionally</a> or view <a href="portfolio/"> some of my work</a>. If you're keen to work together, please <a href="contact">get in touch</a>.</p>
+            <p><small>* biology + acoustics.</small></p>
+
+            <div class="extras">
+
+                <div class="col">
+                    <span class="intro-text">Find out more about</span>
+                    <div class="skills">
+                        <a href="what-i-do">
+                            <span class="title">Skills &amp; CV</span>
+                            <span class="caption">What I do</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <span class="intro-text">View my</span>
+                    <div class="portfolio">
+                        <a href="portfolio/">
+                            <span class="title">Portfolio</span>
+                            <span class="caption">My work</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <span class="intro-text">Get in touch</span>
+                    <div class="contact">
+                        <a href="contact">
+                            <span class="title">Contact</span>
+                            <span class="caption">Say hi</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+	</div>
+	<footer id="main-footer">
+		<span class="enviro">This website is made from 100% recycled pixels</span>
+	</footer>
+</div>
+<script src="scripts/analytics.js"></script>
+<script type="text/javascript">
+    window.addEventListener("load", function () {
+        let mainMenu = document.getElementById("main-menu") || "";
+        let menuTrigger = document.getElementById("menu-show") || "";
+        let menuClose = document.getElementById("menu-hide") || "";
+
+        function toggleMenuClass() {
+            if (mainMenu.classList.contains("selected")) {
+                mainMenu.classList.remove("selected");
+            } else {
+                mainMenu.classList.add("selected");
+            }
+        }
+
+        menuTrigger.onclick = toggleMenuClass;
+        menuClose.onclick = toggleMenuClass;
+
+
+        let mainHeader = document.getElementById("main-header");
+        let previousScrollPosition = window.pageYOffset;
+
+        if (window.pageYOffset >= 68) {
+            positionHeader();
+        }
+
+        function positionHeader() {
+            if (window.pageYOffset >= 68) {
+                let currentScrollPosition = window.pageYOffset;
+
+                if (!mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.add("show-on-scroll-up");
+                }
+
+                if (previousScrollPosition > currentScrollPosition) {
+
+                    if (mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.remove("hide");
+                    }
+
+                } else {
+                    if (!mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.add("hide");
+                    }
+
+                }
+                previousScrollPosition = currentScrollPosition;
+            } else {
+
+                if (mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.remove("show-on-scroll-up");
+                }
+                if (mainHeader.classList.contains("hide")) {
+                    mainHeader.classList.remove("hide");
+                }
+            }
+        }
+
+        window.onscroll = positionHeader;
+
+    });
+</script>
+
+
+</body></html>

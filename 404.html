@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>&#x25B6; 404! | Sara Coutinho</title>
+		<meta name="description" content="Whoops, that page doesn't seem to exist. Have some dinosaurs instead." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style type="text/css">
+			html, body {
+				margin: 0;
+				height: 100%;
+			}
+			html {
+				background: dodgerblue;
+				-webkit-animation: rainbow 20s infinite linear;
+				animation: rainbow 20s infinite linear;
+			}
+			#player {
+				position: absolute;
+				z-index: 2;
+				bottom: 40px;
+				right: 40px;
+			}
+			#dino-forward, #dino-backward {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+			}
+			#text {
+				z-index: 3;
+				font-family: "Segoe UI", "Tahoma", Arial, Helvetica, sans-serif;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				color: #fff;
+			}
+			#text h1 {
+				font-size: 18em;
+				font-weight: 700;
+				margin: 0;
+				text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+			}
+			#text a {
+				display: inline-block;
+				font-size: 1em;
+				box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+				/*text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
+				background: rgba(255, 255, 255, 1);
+				color: rgba(0, 0, 0, 0.85);
+				font-weight: 600;
+				text-decoration: none;
+				border-radius: 1em;
+				padding: 0.4em 1em 0.5em;
+			}
+			#text a:hover {
+				background: rgba(255, 255, 255, 0.85);
+			}
+			#dino-backward  {
+				background: url(data:image/gif;base64,R0lGODlhQABAALMAAP//////AMDAwICAgICAAP8A/4AAgIAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDQAJACwQABAAHgAgAAAE7DDJSes0xuqtTTFESHCkhCEoEqxhqaGFCswr63YIEIiBut8UQm+XErIQQIkQQEAmEITDUekkLZsTxEHkFFY3Rmw2FexZpy5vBTFoh8XnryQ3MBJLQni2XtvpLXlIbG1PdjV/ZXB0hn0hZBWBe3Y6LEeOiV9QNTSHflBwgYN8K5xDfk1QXXdPAKMzlCs+qalKqwgCRq+wlZ+PkU+upDqaXpcTYap9wj1evWVHmo0BNE2Hf4zKIdM6TXnGx9iV2Z/fFJ/KOywi3Vwb5HYqjkXtHCjr1ez3cu72+O+o+0ikiJWin5kkhWKNeYSwIJAIACH5BAkNAAkALBAAEAAfACAAAATxMMlJKzXG6r1NMURIcOSEISgSrGG5oYUKzCvrdggQiIG63xVCb5cSshDAiRBAQCYQhMMx0QQuqxLEQYQUOktGbDal7LnCX47Xghi4qVOwmQ0YGHfizZptr8X1RFluA093NSFpQYFZdYZ+ixZCeW13OodEKJGQhTU0d1BNeZJIbW6Vlj1QPU1QX6OMfQEzqCyrKGKvTwJGs7Q7q6Gui5QrvSuqqYiZEmjMxZY0q4d5cEfItJ4+eInVj96yx5KIkY5+PIeg1BOg36x3oeMvIo6IR1wlt/PzKvDLLkX7tvlL8iQFCkzqCGYxooqbwoIGHUqIAAAh+QQJDQAJACwQABAAHwAgAAAE7jDJSSs1xuq9TTFESHDkhCEoEqxhuaGFCswr63YIEIiBut8VQm+XErIQwIkQQEAmEITDMdEELqsSxEGEFDpLRmw2pey5wt+NV4MYuKlT0poNGBh3Ys3c0r7H1WZZbgNPfix5QYFZdYY1RIB5fTU6NUJNKBaWaVCTOndQTXmaT4N3NCsoXpdio0+MKzOUlT2rX60IAkaxsiy0obaPpLqxqEapl8DBw7CUnIdpcEfOvDRNlYjRjtqTxXjYIdvXfqEh0BOg4avgvtjnIoblqUTtFMfv99aXQEX45cFJT1IIRIEKYD1wTpyZ20cmYEMLEQAAIfkECQ0ACQAsEAAQACAAIAAABO4wyUlrNcbqzU0xREhwJIUhKBKsYcmhhQoAaz26m4HQYqD6OAvBFyCkhiyEMSgZApYJ5SE5RDCd0OhBpATikEXrJCWufm3ijVmDGLgT4KxmzQYMwGES3dLG5zl7bW9dNSxyFEOHO3eFjYcTiWkSfTU0NmEoQn9jYDNFNUpGh5FRbowrnisoVUZKkqRRdkgzlpeuroh/CAKztI4+IbiQuqe0noSrra9JTajGloRFj3GrqJWeRjaPcI3dlaqJwXN+jiFoXC/m3q1goducPeWEopIbySL4wUiZQUf5XD9aMIlCpiAKUAOR8SEzkCC/gREAACH5BAkNAAkALBAAEAAfACAAAATzMMlJKzXG6r1NMURIcOSEISgSrGG5oYUKzCvrdggQiIG63xVCb5cSshDAiRBAQCYQhMMx0QQuqxLEQYQUOktGbDal7LnC341Xgxi4qVPSmg0YGHdizdzSvsfVZlluA09+LHlBgVl1hjUhZIl5fTU6LEePkWlQlJWWj5gSQlVtbnc0Kz5cUF+iTjl2KzOdQz1Nq2VYCAJGsrM7tbasRIK8sqiiwGlww8unp5sooGVHmwGzNE2OiMs13d6Vm1wWId7dPI5Q0hXp5UTpRu/KFO+Gj9FE2+v0IvzZtkBF+nFhluRJioMoUBWcR84VvIUTDo6BZCECACH5BAkNAAkALBAAEAAfACAAAATwMMlJKzXG6r1NMURIcOSEISgSrGG5oYUKzCvrdggQiIG63xVCb5cSshDAiRBAQCYQhMMx0QQuqxLEQYQUOktGbDal7LnCX47Xghi4qVOwmQ0YGHfizZptr8X1RFluA093NSFpQYFZdYZ+iCgWQnltdzosR4iKlJaXmIiaEpNIbW6dNT5cUF+jjH0BM55DPU2rZVgIAkaxsju0tayLlSu8K1C+UHlwi7uXNLQ9yYl3tbt+NE2Hyst+3TWXx1ySjo8hj8nbWebe1YfoiRTojoiZoRwoIvn0TZBARfkqIMG7kSIFEVtJXhg5NjDhk4KRNkQAADs=) repeat -32px -32px;
+				-webkit-animation: move-that-dino-backward 3s infinite linear;
+				animation: move-that-dino-backward 3s infinite linear;
+			}
+			#dino-forward {
+				background: url(data:image/gif;base64,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) repeat;
+				-webkit-animation: move-that-dino-forward 3s infinite linear;
+				animation: move-that-dino-forward 3s infinite linear;
+			}
+			@keyframes move-that-dino-forward {
+				0%   { background-position: 0px 0px }
+				100% { background-position: 64px 0px }
+			}
+			@keyframes move-that-dino-backward {
+				0%   { background-position: -32px -32px}
+				100% { background-position: 32px -32px}
+			}
+			@keyframes rainbow {
+				0% { background: #610A45 }
+				10% { background: red }
+				20% { background: orange }
+				30% { background: #ffd811 }
+				40% { background: greenyellow }
+				50% { background: green }
+				60% { background: teal }
+				70% { background: DeepSkyBlue}
+				80% { background: blue }
+				90% { background: indigo }
+				100% { background: #610A45 }
+			}
+			/* prefixland */
+			@-webkit-keyframes move-that-dino-forward {
+				0%   { background-position: 0px 0px }
+				100% { background-position: 64px 0px }
+			}
+			@-webkit-keyframes move-that-dino-backward {
+				0%   { background-position: -32px -32px}
+				100% { background-position: 32px -32px}
+			}
+			@-webkit-keyframes rainbow {
+				0% { background: red }
+				10% { background: orange }
+				20% { background: yellow }
+				30% { background: greenyellow }
+				40% { background: green }
+				50% { background: teal }
+				60% { background: DeepSkyBlue}
+				70% { background: blue }
+				80% { background: indigo }
+				90% { background: purple }
+				100% { background: red }
+			}
+			@media only screen and (max-width: 639px) {
+				#text h1 {
+					font-size: 9em;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+		<script type="text/javascript">
+			var isiPad = (navigator.userAgent.match(/iPad/i) != null); // the joy.
+
+			var player;
+			var videoWidth = '0';
+			var videoHeight = '0';
+
+			if (isiPad === true) {
+				videoWidth = '200';
+				videoHeight = '140';
+			}
+
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+					height: videoHeight,
+					width: videoWidth,
+					videoId: '5Ocq8UlLuuw',
+					events: {
+						'onReady': onPlayerReady
+					}
+				});
+			}
+
+			function onPlayerReady(event) {
+				if (isiPad !== true) {
+					event.target.playVideo();
+				}
+				document.body.onclick = function () {
+					if (player.getPlayerState() == 1) {
+						player.pauseVideo();
+					} else {
+						player.playVideo();
+					}
+				};
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="dino-forward"></div>
+		<div id="dino-backward"></div>
+		<div id="text">
+			<h1>404!</h1>
+			<p><a href="/">Homepage this way</a></p>
+		</div>
+		<div id="player"></div>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-10716420-6']);
+			_gaq.push(['_setDomainName', 'saracoutinho.co.nz']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>

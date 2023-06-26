@@ -1,1 +1,126 @@
-Hello World!
+<!DOCTYPE html><html class="no-js" lang="en"><head>
+	<meta charset="utf-8">
+	<title>Sara Coutinho - Senior digital product &amp; interaction designer, UX/UI designer, and front-end developer</title>
+	<meta name="description" content="Senior digital product &amp; interaction designer, UX/UI designer, and front-end developer. Curious creature by nature, based in Ltautahi (Christchurch), New Zealand, and available for local and remote contract work.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&amp;family=Mulish:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+<link type="text/css" rel="stylesheet" href="css/intro.css">
+
+</head>
+<body class="home">
+<div id="main" class="main">
+		<div class="content">
+		<div class="intro menu">
+			<h1 id="logo"><a href="\">Sara Coutinho</a></h1>
+			<h2>Senior digital product &amp; interaction designer, UX/UI designer, and front-end developer. Curious creature by nature, based in Ltautahi (Christchurch), New Zealand, and available for local and remote contract work.</h2>
+			<nav class="nav-main">
+				<ul class="menu-main">
+					<li class="about">
+						<a href="about">
+							<span class="title">About me</span>
+							<span class="caption">A brief intro</span>
+						</a>
+					</li>
+					<li class="skills">
+						<a href="what-i-do">
+							<span class="title">Skills &amp; CV</span>
+							<span class="caption">What I do</span>
+						</a>
+					</li>
+					<li class="portfolio">
+						<a href="portfolio/">
+							<span class="title">Portfolio</span>
+							<span class="caption">My work</span>
+						</a>
+					</li>
+					<li class="scrapbook">
+						<a href="http://scrapbook.saracoutinho.co.nz" target="_blank">
+							<span class="title">Scrapbook</span>
+							<span class="caption">The inspiration stream</span>
+						</a>
+					</li>
+					<li class="contact">
+						<a href="contact">
+							<span class="title">Contact</span>
+							<span class="caption">Say hi</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="nav-social">
+				<ul>
+					<li class="linkedin"><a href="http://linkedin.com/in/saracoutinho" target="_blank" title="LinkedIn">LinkedIn</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<script src="scripts/analytics.js"></script>
+<script type="text/javascript">
+    window.addEventListener("load", function () {
+        let mainMenu = document.getElementById("main-menu") || "";
+        let menuTrigger = document.getElementById("menu-show") || "";
+        let menuClose = document.getElementById("menu-hide") || "";
+
+        function toggleMenuClass() {
+            if (mainMenu.classList.contains("selected")) {
+                mainMenu.classList.remove("selected");
+            } else {
+                mainMenu.classList.add("selected");
+            }
+        }
+
+        menuTrigger.onclick = toggleMenuClass;
+        menuClose.onclick = toggleMenuClass;
+
+
+        let mainHeader = document.getElementById("main-header");
+        let previousScrollPosition = window.pageYOffset;
+
+        if (window.pageYOffset >= 68) {
+            positionHeader();
+        }
+
+        function positionHeader() {
+            if (window.pageYOffset >= 68) {
+                let currentScrollPosition = window.pageYOffset;
+
+                if (!mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.add("show-on-scroll-up");
+                }
+
+                if (previousScrollPosition > currentScrollPosition) {
+
+                    if (mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.remove("hide");
+                    }
+
+                } else {
+                    if (!mainHeader.classList.contains("hide")) {
+                        mainHeader.classList.add("hide");
+                    }
+
+                }
+                previousScrollPosition = currentScrollPosition;
+            } else {
+
+                if (mainHeader.classList.contains("show-on-scroll-up")) {
+                    mainHeader.classList.remove("show-on-scroll-up");
+                }
+                if (mainHeader.classList.contains("hide")) {
+                    mainHeader.classList.remove("hide");
+                }
+            }
+        }
+
+        window.onscroll = positionHeader;
+
+    });
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="257.5" height="282.404" viewBox="0 0 257.5 282.404">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle cx="35.5" cy="35.5" r="35.5" fill="#76b4be" opacity="0.5"/>
+      <circle cx="89.5" cy="62.5" r="42" fill="#76b4be" opacity="0.5"/>
+      <circle cx="47.919" cy="77.941" r="26.419" fill="#76b4be" opacity="0.5"/>
+      <line x1="84" y1="213" x2="237" y2="60" fill="none" stroke="#7e9092" stroke-miterlimit="10" stroke-dasharray="2 4"/>
+      <path d="M83.5,164.478v48.337" fill="none" stroke="#7e9092" stroke-miterlimit="10"/>
+      <text transform="translate(147.062 113.267)" font-size="12" fill="#7e9092" font-family="MyriadPro-Regular, Myriad Pro">4.2m</text>
+      <text transform="translate(87.612 185.988)" font-size="12" fill="#7e9092" font-family="MyriadPro-Regular, Myriad Pro">45°</text>
+      <path d="M90.166,250.263l-9.1-28.061a.08.08,0,0,0-.149-.007l-2.909,6.788a.085.085,0,0,0-.006.036l.935,16.931c-.158-.184-.316-.369-.491-.543L53.6,220.56a10,10,0,0,0-12.921-1.223,9.774,9.774,0,0,0-1.123,14.756l25.1,25.1a9.735,9.735,0,0,0,8.119,2.758l-.006.011,11.142-1.633A7.756,7.756,0,0,0,90.166,250.263Z" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <circle cx="59.5" cy="240.5" r="11.5" fill="#fff" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+      <rect x="68" y="210" width="19" height="19" rx="2" transform="translate(-138.031 131.564) rotate(-48.358)" fill="#fbb03b"/>
+      <circle cx="245.5" cy="52.5" r="11.5" fill="#7e9092" stroke="#fff" stroke-miterlimit="10"/>
+      <path d="M117.365,179.635A46.367,46.367,0,0,0,83.5,165" fill="none" stroke="#7e9092" stroke-miterlimit="10" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

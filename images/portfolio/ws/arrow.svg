@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="600" viewBox="0 0 70 600">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <polygon points="70 600 0 600 70 300 0 0 70 0 70 300 70 600" fill="#45737e"/>
+      <polygon points="20 600 0 600 0 0 20 0 70 300 20 600" fill="#224b55"/>
+      <polygon points="20 600 0 600 50 300 0 0 20 0 70 300 20 600" fill="#143037"/>
+    </g>
+  </g>
+</svg>
